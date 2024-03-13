@@ -47,8 +47,6 @@ export function RecipeList() {
   const addBookmark = useBookmarksStore((state) => state.addRecipe);
   const removeBookmark = useBookmarksStore((state) => state.removeRecipe);
 
-  console.log(bookmarks);
-
   return (
     <ul className="flex flex-wrap justify-between items-center">
       {recipesData.map((r) => (
